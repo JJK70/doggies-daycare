@@ -1,3 +1,5 @@
+{% load static %}
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,9 +8,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link
     rel="shortcut icon"
-    type="image/png"
-    href=""
+    type="images/png"
+    href={% static 'images/splash.svg' %}"
   >
+  <link rel="stylesheet" type="text/css" href="{% static 'css/base.css' %}">
   <title>Doggies DayCare</title>
   {% block head %}
   {% endblock %}
@@ -18,13 +21,14 @@
     <div class="header-logo-container">
       <a href="/">
         <img 
-          src=""
+          src="{% static 'images/header-logo.svg' %}"
           alt="The Doggies Daycare Logo"
         >
       </a>
     </div>
     <nav>
       <ul>
+        <li><a href="/dogs">All Doggies</a></li>
         <li><a href="/about">About</a></li>
       </ul>
     </nav>
