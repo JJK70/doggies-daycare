@@ -1,21 +1,6 @@
 from django.shortcuts import render
-from django.views.generic.edit import CreateView
+from django.views.generic.edit import CreateView, UpdateView, DeleteView
 from .models import Dog
-
-# class Dog:
-#   def __init__(self, name, breed, description, age):
-#     self.name = name
-#     self.breed = breed
-#     self.description = description
-#     self.age = age
-
-# dogs = [
-#   Dog('Tyrion', 'teddy bear', 'Needy', 6),
-#   Dog('Fern', 'mutt', 'Hyper', 3),
-#   Dog('Vanna', 'black lab', 'Former guide dog', 4),
-#   Dog('Winston', 'american bulldog', 'Has puppy breath', 0)
-# ]
-
 
 def home(request):
   return render(request, 'home.html')
@@ -35,3 +20,11 @@ class DogCreate(CreateView):
   model = Dog
   fields = '__all__'
   success_url = '/dogs/'
+
+class DogUpdate(UpdateView):
+  model = Dog
+  fields = ['breed', 'description', 'age']
+
+class DogDelete(DeleteView):
+  model = Dog
+  success_url = '/dogs/'  
