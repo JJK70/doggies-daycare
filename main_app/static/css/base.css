@@ -44,6 +44,12 @@ body {
   --font-l: 1.8rem;
   --font-reg: 1.6rem;
   --card-border-radius: 6px;
+  
+}
+
+.back {
+  background-image: url("/../background.jpg");
+  opacity: 0.5;
 }
 
 header {
