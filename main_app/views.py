@@ -1,6 +1,7 @@
 from django.shortcuts import render, redirect
 from django.views.generic.edit import CreateView, UpdateView, DeleteView
-from .models import Dog
+from django.views.generic import ListView, DetailView
+from .models import Dog, Toy
 from .forms import FeedingForm
 
 def home(request):
@@ -37,4 +38,22 @@ def add_feeding(request, dog_id):
     new_feeding = form.save(commit=False)
     new_feeding.dog_id = dog_id
     new_feeding.save()
-  return redirect('dogs_detail', dog_id=dog_id)  
+  return redirect('dogs_detail', dog_id=dog_id)
+
+class ToyCreate(CreateView):
+  model = Toy
+  fields = '__all__'
+
+class ToyList(ListView):
+  model = Toy
+
+class ToyDetail(DetailView):
+  model = Toy
+
+class ToyUpdate(UpdateView):
+  model = Toy
+  fields = ['name', 'color']
+
+class ToyDelete(DeleteView):
+  model = Toy
+  success_url = '/toys/'  
