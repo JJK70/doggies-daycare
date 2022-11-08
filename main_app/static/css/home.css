@@ -28,7 +28,7 @@ main > section {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 80%;
+  width: 100%;
 }
 
 .login h1 {
@@ -65,7 +65,7 @@ main > section {
   }
 
   main > section {
-    width: 90%;
+    width: 50%;
   }
 
   .login {

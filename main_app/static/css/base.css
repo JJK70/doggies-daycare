@@ -26,8 +26,8 @@ body {
     'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 
     'Helvetica Neue', sans-serif;
   min-height: 100vh;
-  --nav-bg: #f98b8c;
-  --nav-bg-ff: #f98b8c;
+  /* --nav-bg: #f98b8c; */
+  /* --nav-bg-ff: #f98b8c; */
   --borders: rgb(36, 116, 248) solid 2px;
   --text-color: rgb(17, 20, 17);
   --link-hover-color: rgb(16, 56, 158);
@@ -161,6 +161,22 @@ nav li {
   font-size: var(--font-reg);
 }
 
+.top {
+  text-decoration: none;
+  color:#f98b8c;
+  font-size: 18px;
+  font-weight:bold;
+  margin-top: -12px;
+}
+
+.top:hover {
+  color: rgb(16, 56, 158);
+}
+
+h1 {
+  color: #f98b8c;
+}
+
 @media only screen and (min-width: 768px) {
   header {
     position: sticky;
@@ -205,7 +221,7 @@ nav li {
   }
   
   .page-header img {
-    height: 50px;
+    height: 100px;
     margin-left:20px;
   }
   
@@ -239,7 +255,7 @@ nav li {
   nav,
   .header-logo-container {
     margin: 0;
-    background: var(--nav-bg-ff);
+    background-color: #f98b8c;
     border: var(--borders);
     border-radius: 18px;
   }
@@ -263,25 +279,8 @@ nav li {
 
     nav,
     .header-logo-container {
-      background: rgba(104, 197, 248, .6);
       -webkit-backdrop-filter: blur(3px);
       backdrop-filter: blur(3px);
     }
   }
-}
-
-.top {
-  text-decoration: none;
-  color:#f98b8c;
-  font-size: 18px;
-  font-weight:bold;
-  margin-top: -12px;
-}
-
-.top:hover {
-  color: rgb(16, 56, 158);
-}
-
-h1 {
-  color: #f98b8c;
 }
