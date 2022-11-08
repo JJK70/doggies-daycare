@@ -10,11 +10,10 @@
 {% if cat %}
     <h1>Edit {{ dog.name }}</h1>
   {% else %}
-    <h1>Add a Doggy</h1>
   {% endif %}
 <div class="page-header">
   <h1>Add a Doggy</h1>
-  <img src="{% static 'images/dog.jpg' %}" alt="A dog"/>
+  <img src="{% static 'images/PeekingDog-11.svg' %}" alt="A dog"/>
 </div>
 <form action="" method="post" class="form-container">
   {% csrf_token %}

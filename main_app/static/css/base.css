@@ -43,7 +43,7 @@ body {
   --font-xl: 2.4rem;
   --font-l: 1.8rem;
   --font-reg: 1.6rem;
-  --card-border-radius: 6px; 
+  --card-border-radius: 6px;
 }
 
 header {
@@ -149,7 +149,7 @@ nav li {
 }
 
 .page-header img {
-  height: 80px;
+  height: 40px;
   margin-left:15px;
 }
 
@@ -212,11 +212,6 @@ nav li {
   .page-header img:first-of-type {
     margin-left: 25px;
   }
- 
-  h1 {
-    font-size: 75px;
-    color: #ff0000;
-  }
 
   @supports (-webkit-backdrop-filter: none) or (backdrop-filter: none) {
     header {
@@ -273,4 +268,20 @@ nav li {
       backdrop-filter: blur(3px);
     }
   }
+}
+
+.top {
+  text-decoration: none;
+  color:#f98b8c;
+  font-size: 18px;
+  font-weight:bold;
+  margin-top: -12px;
+}
+
+.top:hover {
+  color: rgb(16, 56, 158);
+}
+
+h1 {
+  color: #f98b8c;
 }
