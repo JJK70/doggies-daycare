@@ -1,6 +1,6 @@
 # The Peeking Dogs DayCare
 
-![Peeking Dogs DayCare](images/hp_pdd.jpg "Peeking Dogs DayCare")
+![Peeking Dogs DayCare](/images/hp_pdd.jpg "Peeking Dogs DayCare")
 
 ## See the App Here: [Peeking Doggies DayCare](https://tyrions-lets-connect-game.netlify.app/)
 
