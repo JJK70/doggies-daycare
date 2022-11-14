@@ -4,7 +4,7 @@
 
 ## See the App Here: [Peeking Doggies DayCare](https://tyrions-lets-connect-game.netlify.app/)
 
-The Peeking Dogs DayCare is an app designed to allow you to enter your dogs information(name, breed and age.) It also allows you to track feeding time including breakfast, lunch and dinner. You an also add toys by name and color. You can make multiple toys and assign them to any dog you create. You can also update the dogs age, edit and delete dogs and toys. Once you signup or login, you can only see, edit, update and delete dogs you've created.
+The Peeking Dogs DayCare is an app designed to allow you to enter your dogs information(name, breed and age). It also allows you to track feeding time including breakfast, lunch and dinner. You an also add toys by name and color. You can make multiple toys and assign them to any dog you create. You can also update the dogs age, edit and delete dogs and toys. Once you signup or login, you can only see, edit, update and delete dogs you've created.
 
 Welcome to the Peeking Doggies Daycare!
 
