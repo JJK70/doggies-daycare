@@ -1,7 +1,7 @@
 from django.shortcuts import render, redirect
+from django.views.generic import ListView, DetailView
 from django.views.generic.edit import CreateView, UpdateView, DeleteView
 from django.contrib.auth.views import LoginView
-from django.views.generic import ListView, DetailView
 from django.contrib.auth import login
 from django.contrib.auth.forms import UserCreationForm
 from django.contrib.auth.decorators import login_required
@@ -25,7 +25,9 @@ def dogs_detail(request, dog_id):
   dog = Dog.objects.get(id=dog_id)
   toys_dog_doesnt_have = Toy.objects.exclude(id__in = dog.toys.all().values_list('id'))
   feeding_form = FeedingForm()
-  return render(request, 'dogs/detail.html', { 'dog': dog, 'feeding_form': feeding_form, 'toys': toys_dog_doesnt_have })
+  return render(request, 'dogs/detail.html', { 
+    'dog': dog, 'feeding_form': feeding_form, 'toys': toys_dog_doesnt_have 
+  })
 
 class DogCreate(LoginRequiredMixin, CreateView):
   model = Dog
